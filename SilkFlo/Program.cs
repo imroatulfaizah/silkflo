@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using SilkFlo;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+builder.Services.AddDbContext<SilkFloDbContext>(
+    options => options.UseSqlServer(
+        builder.Configuration.GetConnectionString("SilkFlo")
+        )
+    );
 
 var app = builder.Build();
 

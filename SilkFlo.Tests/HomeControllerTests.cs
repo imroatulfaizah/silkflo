@@ -13,10 +13,10 @@ namespace SilkFlo.Tests
     {
         private readonly HomeController _controller;
         private readonly Mock<ILogger<HomeController>> _loggerMock;
-        public HomeControllerTests()
+        public HomeControllerTests(SilkFloDbContext silkFloDbContext)
         {
             _loggerMock = new Mock<ILogger<HomeController>>();
-            _controller = new HomeController(_loggerMock.Object);
+            _controller = new HomeController(_loggerMock.Object, silkFloDbContext);
         }
 
         [Fact]

@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\FAIZAH\source\repos\SilkFlo\SilkFlo
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/FAIZAH/source/repos/SilkFlo/SilkFlo/Views/Home/Calculator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWxjdWxhdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FAIZAH/source/repos/SilkFlo/SilkFlo/Views/Home/EditFormBuilder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0Rm9ybUJ1aWxkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/FAIZAH/source/repos/SilkFlo/SilkFlo/Views/Home/FormBuilder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3JtQnVpbGRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -6,5 +6,6 @@ namespace SilkFlo.Models
     {
         [Required(ErrorMessage = "Expression is required.")]
         public string Expression { get; set; }
+        public double? Memory { get; set; }
     }
 }
