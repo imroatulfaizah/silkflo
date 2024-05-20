@@ -10,9 +10,13 @@
     <div class="row">
         <div class="col-md-4">
             <div id="toolbox">
-                <div class="draggable btn btn-primary" data-type="text">Text Input</div>
-                <div class="draggable btn btn-primary" data-type="password">Password Input</div>
-                <div class="draggable btn btn-primary" data-type="button">Button</div>
+                <div class="draggable btn btn-primary mb-3" data-type="text">Text Input</div>
+                <div class="draggable btn btn-primary mb-3" data-type="password">Password Input</div>
+                <div class="draggable btn btn-primary mb-3" data-type="button">Button</div>
+                <div class="draggable btn btn-primary mb-3" data-type="select">Select</div>
+                <div class="draggable btn btn-primary mb-3" data-type="radio">Radio Button</div>
+                <div class="draggable btn btn-primary mb-3" data-type="checkbox">Checkbox</div>
+                <div class="draggable btn btn-primary mb-3" data-type="textarea">Text Area</div>
             </div>
         </div>
         <div class="col-md-8">
@@ -41,6 +45,10 @@
                     <label for="placeholderText">Placeholder Text:</label>
                     <input type="text" id="placeholderText" class="form-control" required />
                 </div>
+                <div class="form-group" id="optionsGroup" style="display: none;">
+                    <label for="optionsText">Options (comma separated):</label>
+                    <input type="text" id="optionsText" class="form-control" />
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" id="saveLabel">Save</button>
@@ -65,19 +73,39 @@
                     var type = ui.helper.data("type");
                     var newElement;
 
-                    if (type === "button") {
-                        newElement = $("<button>").addClass("btn btn-primary");
-                    } else {
-                        newElement = $("<input>").attr("type", type).addClass("form-control");
+                    switch (type) {
+                        case "button":
+                            newElement = $("<button>").addClass("btn btn-primary");
+                            break;
+                        case "select":
+                            newElement = $("<select>").addClass("form-control");
+                            break;
+                        case "radio":
+                        case "checkbox":
+                            newElement = $("<div>").addClass("form-check");
+                            break;
+                        case "textarea":
+                            newElement = $("<textarea>").addClass("form-control");
+                            break;
+                        default:
+                            newElement = $("<input>").attr("type", type).addClass("form-control");
+                            break;
                     }
 
                     var label = $("<label>").addClass("form-label");
+
+                    if (type === "select" || type === "radio" || type === "checkbox") {
+                        $("#optionsGroup").show();
+                    } else {
+                        $("#optionsGroup").hide();
+                    }
 
                     $("#labelModal").modal('show');
 
                     $("#saveLabel").off('click').click(function () {
                         var labelText = $("#labelText").val();
                         var placeholderText = $("#placeholderText").val();
+                        var optionsText = $("#optionsText").val();
                         if (labelText && placeholderText) {
                             if (type !== "button") {
                                 label.text(labelText);
@@ -87,6 +115,19 @@
                             } else {
                                 newElement.attr("placeholder", placeholderText);
                             }
+                            if ((type === "select" || type === "radio" || type === "checkbox") && optionsText) {
+                                var options = optionsText.split(",");
+                                options.forEach(function (option) {
+                                    if (type === "select") {
+                                        newElement.append($("<option>").text(option));
+                                    } else {
+                                        var optionElement = $("<input>").attr("type", type).addClass("form-check-input");
+                                        var optionLabel = $("<label>").addClass("form-check-label").text(option);
+                                        var optionDiv = $("<div>").addClass("form-check").append(optionElement).append(optionLabel);
+                                        newElement.append(optionDiv);
+                                    }
+                                });
+                            }
                             $("#labelModal").modal('hide');
                         }
                     });
@@ -94,6 +135,7 @@
                     $("#labelModal").on('hidden.bs.modal', function () {
                         $("#labelText").val("");
                         $("#placeholderText").val("");
+                        $("#optionsText").val("");
                         var fieldWrapper = $("<div>").addClass("form-group");
                         if (type !== "button") {
                             fieldWrapper.append(label);
