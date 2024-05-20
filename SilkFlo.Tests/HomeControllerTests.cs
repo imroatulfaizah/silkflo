@@ -6,17 +6,25 @@ using Assert = Xunit.Assert;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NCalc;
+using Microsoft.EntityFrameworkCore;
 
 namespace SilkFlo.Tests
 {
     public class HomeControllerTests
     {
         private readonly HomeController _controller;
+        private readonly SilkFloDbContext _context;
         private readonly Mock<ILogger<HomeController>> _loggerMock;
-        public HomeControllerTests(SilkFloDbContext silkFloDbContext)
+
+        public HomeControllerTests()
         {
+            var options = new DbContextOptionsBuilder<SilkFloDbContext>()
+                .UseInMemoryDatabase(databaseName: "SilkFloTestDb")
+                .Options;
+
+            _context = new SilkFloDbContext(options);
             _loggerMock = new Mock<ILogger<HomeController>>();
-            _controller = new HomeController(_loggerMock.Object, silkFloDbContext);
+            _controller = new HomeController(_loggerMock.Object, _context);
         }
 
         [Fact]

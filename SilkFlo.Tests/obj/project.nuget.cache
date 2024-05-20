@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZKZfZYJVdnCNX1Ttkq8VrujuAREtjtGLc4+lM1lIOCMkYYnif7zfuCkr4s6qf87YORqvGppCkmkRjt3ViIw5Ww==",
+  "dgSpecHash": "21e5A+SssD1Ke4RlXss/dS0dPphkOKbH1YA4VgT5sixvvYmmQORhSVqcbCfOkqpn0kuSrGuv/+fvwg1DbxZeQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo.Tests\\SilkFlo.Tests.csproj",
+  "projectFilePath": "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo.Tests\\SilkFlo.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FAIZAH\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\FAIZAH\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -23,6 +23,7 @@
     "C:\\Users\\FAIZAH\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
     "C:\\Users\\FAIZAH\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.2\\microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",
     "C:\\Users\\FAIZAH\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.2\\microsoft.entityframeworkcore.analyzers.7.0.2.nupkg.sha512",
+    "C:\\Users\\FAIZAH\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.2\\microsoft.entityframeworkcore.inmemory.7.0.2.nupkg.sha512",
     "C:\\Users\\FAIZAH\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.2\\microsoft.entityframeworkcore.relational.7.0.2.nupkg.sha512",
     "C:\\Users\\FAIZAH\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.2\\microsoft.entityframeworkcore.sqlserver.7.0.2.nupkg.sha512",
     "C:\\Users\\FAIZAH\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
@@ -98,8 +99,8 @@
     "C:\\Users\\FAIZAH\\.nuget\\packages\\xunit.extensibility.core\\2.8.0\\xunit.extensibility.core.2.8.0.nupkg.sha512",
     "C:\\Users\\FAIZAH\\.nuget\\packages\\xunit.extensibility.execution\\2.8.0\\xunit.extensibility.execution.2.8.0.nupkg.sha512",
     "C:\\Users\\FAIZAH\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.0\\xunit.runner.visualstudio.2.8.0.nupkg.sha512",
-    "C:\\Users\\FAIZAH\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.30\\microsoft.windowsdesktop.app.ref.6.0.30.nupkg.sha512",
     "C:\\Users\\FAIZAH\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.30\\microsoft.netcore.app.ref.6.0.30.nupkg.sha512",
+    "C:\\Users\\FAIZAH\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.30\\microsoft.windowsdesktop.app.ref.6.0.30.nupkg.sha512",
     "C:\\Users\\FAIZAH\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.30\\microsoft.aspnetcore.app.ref.6.0.30.nupkg.sha512"
   ],
   "logs": [
