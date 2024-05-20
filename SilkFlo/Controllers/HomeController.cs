@@ -66,7 +66,7 @@ namespace SilkFlo.Controllers
 
             return View("Index", model);
         }
-        private double EvaluateExpression(string expression)
+        public double EvaluateExpression(string expression)
         {
             NCalc.Expression e = new NCalc.Expression(expression);
             e.EvaluateFunction += delegate (string name, NCalc.FunctionArgs args)

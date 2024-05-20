@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo.Tests\\SilkFlo.Tests.csproj": {}
+    "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo.Tests\\SilkFlo.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo.Tests\\SilkFlo.Tests.csproj": {
+    "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo.Tests\\SilkFlo.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo.Tests\\SilkFlo.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo.Tests\\SilkFlo.Tests.csproj",
         "projectName": "SilkFlo.Tests",
-        "projectPath": "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo.Tests\\SilkFlo.Tests.csproj",
+        "projectPath": "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo.Tests\\SilkFlo.Tests.csproj",
         "packagesPath": "C:\\Users\\FAIZAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo.Tests\\obj\\",
+        "outputPath": "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FAIZAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo\\SilkFlo.csproj": {
-                "projectPath": "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo\\SilkFlo.csproj"
+              "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo\\SilkFlo.csproj": {
+                "projectPath": "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo\\SilkFlo.csproj"
               }
             }
           }
@@ -47,6 +47,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.9.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             },
             "NUnit": {
               "target": "Package",
@@ -109,14 +113,14 @@
         }
       }
     },
-    "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo\\SilkFlo.csproj": {
+    "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo\\SilkFlo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo\\SilkFlo.csproj",
+        "projectUniqueName": "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo\\SilkFlo.csproj",
         "projectName": "SilkFlo",
-        "projectPath": "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo\\SilkFlo.csproj",
+        "projectPath": "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo\\SilkFlo.csproj",
         "packagesPath": "C:\\Users\\FAIZAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo\\obj\\",
+        "outputPath": "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FAIZAH\\AppData\\Roaming\\NuGet\\NuGet.Config",

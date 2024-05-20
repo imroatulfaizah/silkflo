@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo\\SilkFlo.csproj": {}
+    "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo\\SilkFlo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo\\SilkFlo.csproj": {
+    "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo\\SilkFlo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo\\SilkFlo.csproj",
+        "projectUniqueName": "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo\\SilkFlo.csproj",
         "projectName": "SilkFlo",
-        "projectPath": "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo\\SilkFlo.csproj",
+        "projectPath": "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo\\SilkFlo.csproj",
         "packagesPath": "C:\\Users\\FAIZAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FAIZAH\\source\\repos\\SilkFlo\\SilkFlo\\obj\\",
+        "outputPath": "C:\\Users\\FAIZAH\\source\\repos\\silkflo\\SilkFlo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FAIZAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
